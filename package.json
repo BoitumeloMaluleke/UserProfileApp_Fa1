@@ -1,0 +1,13 @@
+{
+  "name": "userprofileapp",
+  "version": "1.0.0",
+  "description": "User Profile Application",
+  "scripts": {
+    "start": "node backend/server.js",
+    "postinstall": "cd backend && npm install --production"
+  },
+  "engines": {
+    "node": "18.x"
+  }
+}
+

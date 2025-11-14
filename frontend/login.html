@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - User Profile App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="min-h-screen bg-gray-50 flex items-center justify-center p-4">
+    <main class="w-full max-w-md">
+      <div class="bg-white shadow-lg rounded-xl p-8">
+        <h1 class="text-2xl font-semibold text-gray-900 text-center">Sign in</h1>
+        <p class="mt-2 text-sm text-gray-500 text-center">Welcome back to User Profile App</p>
+
+        <form id="login-form" class="mt-8 space-y-4">
+          <div class="space-y-1">
+            <label for="username" class="block text-sm font-medium text-gray-700">Username</label>
+            <input
+              id="username"
+              name="username"
+              type="text"
+              autocomplete="username"
+              required
+              class="mt-1 block w-full rounded-lg border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+              placeholder="yourusername"
+            />
+            <p id="username-message" class="text-xs hidden"></p>
+          </div>
+          <div class="space-y-1">
+            <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+            <input
+              id="password"
+              name="password"
+              type="password"
+              autocomplete="current-password"
+              required
+              class="mt-1 block w-full rounded-lg border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+              placeholder="••••••••"
+            />
+            <p id="password-message" class="text-xs hidden"></p>
+          </div>
+
+          <button
+            id="login-button"
+            type="submit"
+            class="w-full rounded-lg bg-blue-600 px-4 py-2.5 text-white font-medium transition-colors duration-150 hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          >
+            Log in
+          </button>
+        </form>
+      </div>
+
+      <p class="mt-6 text-center text-xs text-gray-500">
+        Don’t have an account?
+        <a href="./register.html" class="text-blue-600 underline">Create one here.</a>
+      </p>
+    </main>
+
+    <script src="./scripts/login.js"></script>
+  </body>
+  </html>
+
